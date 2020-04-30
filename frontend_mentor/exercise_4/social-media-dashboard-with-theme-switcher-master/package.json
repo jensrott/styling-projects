@@ -1,0 +1,18 @@
+{
+  "name": "social-media-dashboard-with-theme-switcher-master",
+  "version": "1.0.0",
+  "description": "![Design preview for the Social media dashboard with theme switcher coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "serve": "live-server",
+    "watch": "stylus --watch stylus/main.styl --out css --compress",
+    "start": "concurrently \"npm run serve\" \"npm run watch\""
+  },
+  "author": "Jens Rottiers <jens.rottiers@scarlet.be>",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^5.2.0",
+    "live-server": "^1.2.1",
+    "stylus": "^0.54.7"
+  }
+}

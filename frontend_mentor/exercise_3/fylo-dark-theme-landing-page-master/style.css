@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(218, 28%, 13%);
+  color: #fff;
+}
+
+/* header */
+header {
+  display: flex;
+  padding: 4rem;
+}
+
+.company-logo {
+  margin-right: auto;
+}
+
+.links {
+  display: flex;
+}
+
+.links li {
+  margin: 1rem;
+  list-style-type: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1440px;
+}
+
+/* Intro */
+.intro {
+  text-align: center;
+  /* background-color: hsl(217, 28%, 15%); */
+  margin-bottom: 5rem;
+}
+
+.intro img {
+  width: 500px;
+}
+
+.intro h1 {
+  margin: 2rem 0;
+  font-size: 2rem;
+}
+
+.intro p {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.intro button {
+  border: none;
+  background-color: hsl(198, 60%, 50%);
+  padding: 0.5rem 3rem;
+  border-radius: 1rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
+/* features */
+.features {
+  display: flex;
+  margin-bottom: 5rem;
+}
+
+.feature {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.feature h1 {
+  margin-bottom: 1rem;
+}
+
+.feature img {
+  max-width: 100%;
+}
+
+/* footer */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

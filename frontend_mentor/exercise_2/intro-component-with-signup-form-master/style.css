@@ -1,0 +1,239 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --White: #fff;
+
+  --Blue: hsl(248, 32%, 49%);
+
+  --DarkBlue: hsl(249, 10%, 26%);
+  --GrayishBlue: hsl(246, 25%, 77%);
+}
+
+body {
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  background-image: url("./images/bg-intro-desktop.png");
+  background-color: var(--Red);
+  height: 100vh;
+}
+
+.container {
+  margin: 0 15%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex-grow: 1;
+  flex-basis: 0;
+}
+
+.left-side {
+  display: flex;
+  align-items: center;
+  color: var(--White);
+  max-width: 360px;
+}
+
+.text-container h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  line-height: 1;
+  width: 497px;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 15%;
+}
+
+.free-button {
+  background-color: var(--Blue);
+  padding: 1rem 1.5rem;
+  text-align: center;
+  color: var(--White);
+  font-weight: 100;
+  border-radius: 0.3rem;
+  box-shadow: 0px 5px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+.signupform {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+  height: 50vh;
+  width: 35vw;
+}
+
+#signupform {
+  background-color: var(--White);
+  border-radius: 0.3rem;
+  padding: 1rem 2rem;
+  width: 100%;
+  box-shadow: 0px 5px 1px 1px rgba(0, 0, 0, 0.15);
+}
+
+#signupform div {
+  height: 20%;
+}
+
+#signupform .error {
+  position: relative;
+
+}
+
+#signupform div small {
+	color: var(--Red);
+	margin-left: 0.3rem;
+	visibility: hidden;
+}
+
+#signupform .error small {
+  visibility: visible;
+}
+
+#signupform .error small {
+  visibility: visible;
+}
+
+#signupform .succes small {
+  visibility: visible;
+}
+
+.signupform div input {
+  width: 100%;
+  height: 65px;
+  border: 1px solid var(--GrayishBlue);
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.signupform div input:focus {
+  outline: none;
+  border: 1px solid var(--DarkBlue);
+  border-radius: 0.5rem;
+}
+
+.signupform div input:focus::-webkit-input-placeholder {
+  color: var(--DarkBlue);
+}
+
+.signupform div input::placeholder {
+  font-weight: bold;
+}
+
+.signupform .success input {
+  border: 2px solid var(--Green);
+}
+
+.signupform .error input {
+  border: 2px solid var(--Red);
+}
+
+.signupform button {
+  background-color: var(--Green);
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--White);
+  padding: 1rem 2rem;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.signupform p {
+  font-size: 0.5rem;
+  color: var(--GrayishBlue);
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.signupform p span {
+  color: var(--Red);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.free-button span {
+  font-weight: bold;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 33.3%;
+}
+
+footer .attribution {
+  font-size: 11px;
+  text-align: center;
+}
+footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* Media queries */
+@media screen and (max-width: 1024px) {
+  .container {
+    margin: 0 3%;
+    display: initial;
+  }
+
+  .left-side {
+    display: flex;
+    justify-content: center;
+    max-width: initial;
+  }
+
+  .text-container {
+    width: initial;
+    margin-top: 5rem;
+  }
+
+  .text-container h1 {
+    width: initial;
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .text-container p {
+    text-align: center;
+    margin: 3rem 12%;
+  }
+
+  .free-button p {
+    width: 230px;
+    text-align: center;
+    margin-left: 3rem;
+  }
+
+  #signupform {
+    margin: 1rem 0;
+  }
+
+  #signupform div {
+    margin: 1rem 0;
+  }
+
+  .signupform {
+    display: initial;
+  }
+
+  .right-side {
+    margin-left: initial;
+  }
+}
