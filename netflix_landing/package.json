@@ -1,0 +1,14 @@
+{
+  "name": "netflix_landing",
+  "version": "1.0.0",
+  "description": "Netflix landing page clone",
+  "main": "script.js",
+  "scripts": {
+    "sass": "node-sass --watch scss -o css"
+  },
+  "author": "Jens Rottiers",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.0"
+  }
+}
