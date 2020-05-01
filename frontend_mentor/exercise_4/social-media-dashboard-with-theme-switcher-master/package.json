@@ -5,14 +5,15 @@
   "main": "index.js",
   "scripts": {
     "serve": "live-server",
-    "watch": "stylus --watch stylus/main.styl --out css --compress",
-    "start": "concurrently \"npm run serve\" \"npm run watch\""
+    "sass": "node-sass --watch scss -o css",
+    "start": "concurrently \"npm run serve\" \"npm run sass\""
   },
   "author": "Jens Rottiers <jens.rottiers@scarlet.be>",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^5.2.0",
     "live-server": "^1.2.1",
+    "node-sass": "^4.14.0",
     "stylus": "^0.54.7"
   }
 }

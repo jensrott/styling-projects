@@ -1,0 +1,308 @@
+/* Primary */
+$Lime-Green: hsl(163, 72%, 41%);
+$Bright-Red: hsl(356, 69%, 56%);
+
+$Facebook: hsl(195, 100%, 50%);
+$Twitter: hsl(203, 89%, 53%);
+$Instagram: linear-gradient(hsl(37, 97%, 70%) to hsl(329, 70%, 58%));
+$YouTube: hsl(348, 97%, 39%);
+
+/* Dark Theme */
+
+$Toggle: linear-gradient(hsl(210, 78%, 56%) to hsl(146, 68%, 55%));
+
+/* Light Theme */
+
+$Toggle: hsl(230, 22%, 74%);
+
+/* Neutral */
+
+/* Dark Theme */
+
+$Very-Dark-Blue-BG: hsl(230, 17%, 14%);
+$Very-Dark-Blue-Top-BG-Pattern: hsl(232, 19%, 15%);
+$Dark-Desaturated-Blue-Card-BG: hsl(228, 28%, 20%);
+$Desaturated-Blue-Text: hsl(228, 34%, 66%);
+$White-Text: hsl(0, 0%, 100%);
+
+/* Light Theme */
+
+$White-BG: hsl(0, 0%, 100%);
+$Very-Pale-Blue-Top-BG-Pattern: hsl(225, 100%, 98%);
+$Light-Grayish-Blue-Card-BG: hsl(227, 47%, 96%);
+$Dark-Grayish-Blue-Text: hsl(228, 12%, 44%);
+$Very-Dark-Blue-Text: hsl(230, 17%, 14%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  background-color: $Very-Dark-Blue-BG;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  .social {
+    &__titles-container {
+      margin-top: 2rem;
+      color: $White-Text;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    &__main-title {
+      font-size: 2rem;
+    }
+
+    &__sub-title {
+      font-size: 1rem;
+      color: $Desaturated-Blue-Text;
+    }
+
+    &__toggle-container {
+      display: flex;
+      align-items: center;
+      .toggle {
+        margin-left: 2rem;
+        .switch {
+          position: relative;
+          display: inline-block;
+          width: 60px;
+          height: 34px;
+          input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+
+            &:checked {
+              background-color: #2196f3;
+              transform: translateX(26px);
+            }
+
+            &:focus {
+              box-shadow: 0 0 1px #2196f3;
+            }
+          }
+
+          .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+
+            &::before {
+              position: absolute;
+              content: "";
+              height: 26px;
+              width: 26px;
+              left: 4px;
+              bottom: 4px;
+              background-color: white;
+              -webkit-transition: 0.4s;
+              transition: 0.4s;
+              transform: translateX(26px);
+            }
+          }
+
+          .round {
+            border-radius: 34px;
+            &::before {
+              border-radius: 50%;
+            }
+          }
+        }
+      }
+    }
+
+    &__cards-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 2rem;
+      margin: 3rem 0;
+    }
+
+    &__card {
+      border-top: 5px solid $Twitter;
+      border-bottom-left-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      padding: 2rem;
+      height: 230px;
+      background-color: $Dark-Desaturated-Blue-Card-BG;
+
+      &:nth-child(1) {
+        border-top-color: $Facebook;
+        color: $Facebook;
+      }
+
+      &:nth-child(2) {
+        color: $Instagram;
+        border-top-color: $Instagram;
+        // border-image: $Instagram;
+      }
+
+      &:nth-child(3) {
+        color: $Twitter;
+        border-top-color: $Twitter;
+      }
+
+      &:nth-child(4) {
+        color: $YouTube;
+        border-top-color: $YouTube;
+      }
+
+      .social-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        i {
+          margin-right: 1rem;
+          font-size: 2rem;
+        }
+        p {
+          color: $Desaturated-Blue-Text;
+        }
+      }
+
+      .followers-container-text {
+        margin: 0.8rem 0;
+        h1 {
+          font-size: 4rem;
+          color: $White-Text;
+        }
+
+        p {
+          letter-spacing: 3px;
+          color: $Desaturated-Blue-Text;
+        }
+      }
+
+      .followers-container-icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $Lime-Green;
+
+        &:nth-child(4) {
+          i,
+          p {
+            color: $Bright-Red;
+          }
+        }
+
+        i {
+          display: flex;
+          align-items: center;
+          margin-right: 0.5rem;
+          font-size: 1.5rem;
+        }
+
+        p {
+        }
+      }
+    }
+
+    &__overview-title {
+      color: $White-Text;
+      font-size: 2rem;
+    }
+
+    &__overview-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 2rem;
+      margin: 2rem 0;
+    }
+
+    &__overview-card {
+      border-radius: 0.5rem;
+      background-color: $Dark-Desaturated-Blue-Card-BG;
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .overview-views-container {
+        margin-bottom: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+          color: $Desaturated-Blue-Text;
+          font-weight: bold;
+          font-size: 1.2rem;
+        }
+
+        i {
+          font-size: 2rem;
+        }
+
+        span {
+        }
+      }
+
+      .overview-increase-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+          color: $White-Text;
+          font-weight: bold;
+          font-size: 2.5rem;
+        }
+
+        span {
+          color: $Lime-Green;
+        }
+      }
+    }
+  }
+}
+
+// Media queries
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: 375px;
+
+    .social {
+      &__main-title {
+        white-space: nowrap;
+      }
+
+      &__toggle-container {
+        margin-top: 2rem;
+      }
+
+      &__cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+      }
+
+      &__overview-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 2rem;
+      }
+    }
+  }
+}

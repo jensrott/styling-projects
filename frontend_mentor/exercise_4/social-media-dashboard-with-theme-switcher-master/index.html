@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -15,23 +14,178 @@
     <title>Frontend Mentor | Social Media Dashboard</title>
 
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    Social Media Dashboard Total Followers: 23,004 Dark Mode @nathanf 1987
-    Followers 12 Today @nathanf 1044 Followers 99 Today @realnathanf 11k
-    Followers 1099 Today Nathan F. 8239 Subscribers 144 Today Overview - Today
-    Page Views 87 3% Likes 52 2% Likes 5462 2257% Profile Views 52k 1375%
-    Retweets 117 303% Likes 507 553% Likes 107 19% Total Views 1407 12%
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+    <div class="container">
+      <div class="social">
+        <div class="social__titles-container">
+          <div>
+            <h1 class="social__main-title">Social Media Dashboard</h1>
+            <h2 class="social__sub-title">Total Followers: 23,004</h2>
+          </div>
+          <div class="social__toggle-container">
+            <div>
+              <h2>Dark Mode</h2>
+            </div>
+            <div class="toggle">
+              <label class="switch">
+                <input type="checkbox" />
+                <span class="slider round"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div class="social__cards-container">
+          <div class="social__card">
+            <div class="social-container">
+              <i class="fab fa-facebook-square"></i>
+              <p>@nathanf</p>
+            </div>
+            <div class="followers-container-text">
+              <h1>1987</h1>
+              <p>FOLLOWERS</p>
+            </div>
+            <div class="followers-container-icon">
+              <i class="fas fa-sort-up"></i>
+              <p>12 Today</p>
+            </div>
+          </div>
+          <div class="social__card">
+            <div class="social-container">
+              <i class="fab fa-instagram"></i>
+              <p>@nathanf</p>
+            </div>
+            <div class="followers-container-text">
+              <h1>1044</h1>
+              <p>FOLLOWERS</p>
+            </div>
+            <div class="followers-container-icon">
+              <i class="fas fa-sort-up"></i>
+              <p>99 Today</p>
+            </div>
+          </div>
+          <div class="social__card">
+            <div class="social-container">
+              <i class="fab fa-twitter"></i>
+              <p class="social-name">@realnathanf</p>
+            </div>
+            <div class="followers-container-text">
+              <h1 class="followers-number">11K</h1>
+              <p class="followers-word">FOLLOWERS</p>
+            </div>
+            <div class="followers-container-icon">
+              <i class="fas fa-sort-up"></i>
+              <p class="followers-text">1099 Today</p>
+            </div>
+          </div>
+          <div class="social__card">
+            <div class="social-container">
+              <i class="fab fa-youtube"></i>
+              <p class="social-name">Nathan F.</p>
+            </div>
+            <div class="followers-container-text">
+              <h1 class="followers-number">8293</h1>
+              <p class="followers-word">SUBSCRIBERS</p>
+            </div>
+            <div class="followers-container-icon">
+              <i class="fas fa-sort-down"></i>
+              <p>144 Today</p>
+            </div>
+          </div>
+        </div>
+        <h1 class="social__overview-title">Overview - Today</h1>
+        <div class="social__overview-container">
+          <div class="social__overview-card">
+            <div class="overview-views-container">
+              <p>Page views</p>
+              <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="overview-increase-container">
+              <p>87</p>
+              <span><i class="fas fa-sort-up"></i> 3%</span>
+            </div>
+          </div>
+          <div class="social__overview-card">
+            <div class="overview-views-container">
+              <p>Likes</p>
+              <i class="fab fa-facebook-square"></i>
+            </div>
+            <div class="overview-increase-container">
+              <p>52</p>
+              <span><i class="fas fa-sort-down"></i> 2%</span>
+            </div>
+          </div>
+          <div class="social__overview-card">
+            <div class="overview-views-container">
+              <p>Likes</p>
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="overview-increase-container">
+              <p>5462</p>
+              <span><i class="fas fa-sort-up"></i> 2257%</span>
+            </div>
+          </div>
+          <div class="social__overview-card">
+            <div class="overview-views-container">
+              <p>Profile Views</p>
+              <i class="fab fa-instagram"></i>
+            </div>
+            <div class="overview-increase-container">
+              <p>52K</p>
+              <span><i class="fas fa-sort-up"></i> 1375%</span>
+            </div>
+          </div>
+          <div class="social__overview-card">
+            <div class="overview-views-container">
+              <p>Retweets</p>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="overview-increase-container">
+              <p>117</p>
+              <span><i class="fas fa-sort-up"></i> 303%</span>
+            </div>
+          </div>
+          <div class="social__overview-card">
+            <div class="overview-views-container">
+              <p>Likes</p>
+              <i class="fab fa-twitter"></i>
+            </div>
+            <div class="overview-increase-container">
+              <p>507</p>
+              <span><i class="fas fa-sort-up"></i> 553%</span>
+            </div>
+          </div>
+          <div class="social__overview-card">
+            <div class="overview-views-container">
+              <p>Likes</p>
+              <i class="fab fa-youtube"></i>
+            </div>
+            <div class="overview-increase-container">
+              <p>107</p>
+              <span><i class="fas fa-sort-down"></i> 19%</span>
+            </div>
+          </div>
+          <div class="social__overview-card">
+            <div class="overview-views-container">
+              <p>Total Views</p>
+              <i class="fab fa-youtube"></i>
+            </div>
+            <div class="overview-increase-container">
+              <p>1407</p>
+              <span><i class="fas fa-sort-down"></i> 12%</span>
+            </div>
+          </div>
+        </div>
+        or
+      </div>
     </div>
   </body>
 </html>
