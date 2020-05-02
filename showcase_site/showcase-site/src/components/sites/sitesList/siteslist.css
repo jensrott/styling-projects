@@ -1,0 +1,21 @@
+.sites {
+}
+
+.sites .sites__title {
+  font-size: 4rem;
+}
+
+.sites .sites__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .sites .sites__title {
+    text-align: center;
+  }
+  .sites .sites__container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,29 @@
+.site {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 1rem 0;
+  border-radius: 1rem;
+  transition: all 500ms ease-in-out;
+}
+
+.site:hover {
+  transform: scale(1.05);
+}
+
+.site:active {
+  transform: scale(1.1);
+}
+
+.site .site__title {
+}
+
+.site .site__image {
+  width: 200px;
+  height: auto;
+}
+
+.site .site__url {
+}
