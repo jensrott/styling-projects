@@ -17,6 +17,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
     />
+
     <link
       href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap"
       rel="stylesheet"
@@ -26,6 +27,7 @@
   <body>
     <div class="container">
       <div class="social">
+        <div class="social__background-top"></div>
         <div class="social__titles-container">
           <div>
             <h1 class="social__main-title">Social Media Dashboard</h1>
@@ -36,17 +38,17 @@
               <h2>Dark Mode</h2>
             </div>
             <div class="toggle">
-              <label class="switch">
-                <input type="checkbox" />
-                <span class="slider round"></span>
-              </label>
+              <div class="switch">
+                <input type="checkbox" id="checkbox1" />
+                <label for="checkbox1"></label>
+              </div>
             </div>
           </div>
         </div>
         <div class="social__cards-container">
           <div class="social__card">
             <div class="social-container">
-              <i class="fab fa-facebook-square"></i>
+              <img src="./images/icon-facebook.svg" />
               <p>@nathanf</p>
             </div>
             <div class="followers-container-text">
@@ -60,7 +62,7 @@
           </div>
           <div class="social__card">
             <div class="social-container">
-              <i class="fab fa-instagram"></i>
+              <img src="./images/icon-twitter.svg" alt="" />
               <p>@nathanf</p>
             </div>
             <div class="followers-container-text">
@@ -74,7 +76,7 @@
           </div>
           <div class="social__card">
             <div class="social-container">
-              <i class="fab fa-twitter"></i>
+              <img src="./images/icon-instagram.svg" />
               <p class="social-name">@realnathanf</p>
             </div>
             <div class="followers-container-text">
@@ -88,7 +90,7 @@
           </div>
           <div class="social__card">
             <div class="social-container">
-              <i class="fab fa-youtube"></i>
+              <img src="./images/icon-youtube.svg" />
               <p class="social-name">Nathan F.</p>
             </div>
             <div class="followers-container-text">
@@ -106,7 +108,7 @@
           <div class="social__overview-card">
             <div class="overview-views-container">
               <p>Page views</p>
-              <i class="fab fa-facebook-square"></i>
+              <img src="./images/icon-facebook.svg" />
             </div>
             <div class="overview-increase-container">
               <p>87</p>
@@ -116,7 +118,7 @@
           <div class="social__overview-card">
             <div class="overview-views-container">
               <p>Likes</p>
-              <i class="fab fa-facebook-square"></i>
+              <img src="./images/icon-facebook.svg" />
             </div>
             <div class="overview-increase-container">
               <p>52</p>
@@ -126,7 +128,7 @@
           <div class="social__overview-card">
             <div class="overview-views-container">
               <p>Likes</p>
-              <i class="fab fa-instagram"></i>
+              <img src="./images/icon-instagram.svg" alt="" />
             </div>
             <div class="overview-increase-container">
               <p>5462</p>
@@ -136,7 +138,7 @@
           <div class="social__overview-card">
             <div class="overview-views-container">
               <p>Profile Views</p>
-              <i class="fab fa-instagram"></i>
+              <img src="./images/icon-instagram.svg" />
             </div>
             <div class="overview-increase-container">
               <p>52K</p>
@@ -146,7 +148,7 @@
           <div class="social__overview-card">
             <div class="overview-views-container">
               <p>Retweets</p>
-              <i class="fab fa-twitter"></i>
+              <img src="./images/icon-twitter.svg" />
             </div>
             <div class="overview-increase-container">
               <p>117</p>
@@ -156,7 +158,7 @@
           <div class="social__overview-card">
             <div class="overview-views-container">
               <p>Likes</p>
-              <i class="fab fa-twitter"></i>
+              <img src="./images/icon-twitter.svg" />
             </div>
             <div class="overview-increase-container">
               <p>507</p>
@@ -166,7 +168,7 @@
           <div class="social__overview-card">
             <div class="overview-views-container">
               <p>Likes</p>
-              <i class="fab fa-youtube"></i>
+              <img src="./images/icon-youtube.svg" />
             </div>
             <div class="overview-increase-container">
               <p>107</p>
@@ -176,7 +178,7 @@
           <div class="social__overview-card">
             <div class="overview-views-container">
               <p>Total Views</p>
-              <i class="fab fa-youtube"></i>
+              <img src="./images/icon-youtube.svg" />
             </div>
             <div class="overview-increase-container">
               <p>1407</p>
@@ -187,5 +189,7 @@
         or
       </div>
     </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
