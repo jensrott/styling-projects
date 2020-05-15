@@ -1,7 +1,7 @@
 {
-  "name": "ping-coming-soon-page-master",
+  "name": "single-price-grid-component-master",
   "version": "1.0.0",
-  "description": "Ping coming soon page coding challenge",
+  "description": "Single Price Grid Component coding challenge",
   "main": "index.js",
   "scripts": {
     "sass": "node-sass --watch scss -o css"
@@ -9,6 +9,6 @@
   "author": "Jens Rottiers <jens.rottiers@scarlet.be>",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.14.0"
+    "node-sass": "^4.14.1"
   }
 }

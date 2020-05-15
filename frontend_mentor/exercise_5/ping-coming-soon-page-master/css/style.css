@@ -63,7 +63,7 @@ body {
   background-color: #4f7df3;
   padding: 0.7rem 5rem;
   border-radius: 1rem;
-  font-weight: bold;
+  font-weight: 800;
   cursor: pointer;
   transition: transform 300ms ease-in-out; }
   .input-container form input[type='submit']:hover {

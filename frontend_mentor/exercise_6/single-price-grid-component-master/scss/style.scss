@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+
+//  Primary
+$Cyan: hsl(179, 62%, 43%);
+$Bright-Yellow: hsl(71, 73%, 54%);
+
+// Neutral
+$Light-Gray: hsl(204, 43%, 93%);
+$Grayish-Blue: hsl(218, 22%, 67%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: hsl(204, 43%, 93%);
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Karla", sans-serif;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+section {
+  padding: 35px;
+}
+
+.card {
+  background-color: $Light-Gray;
+  width: 800px;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+  &__section-1 {
+  }
+
+  .card-bottom {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    &__section-2 {
+      color: $Light-Gray;
+      background-color: hsl(179, 62%, 43%);
+      border-bottom-left-radius: 10px;
+    }
+
+    &__section-3 {
+      color: $Light-Gray;
+      background-color: hsl(179, 47%, 52%);
+      border-bottom-right-radius: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 375px;
+  }
+}
