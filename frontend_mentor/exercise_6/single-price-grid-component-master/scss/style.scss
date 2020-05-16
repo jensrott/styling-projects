@@ -2,25 +2,31 @@
 
 //  Primary
 $Cyan: hsl(179, 62%, 43%);
+$Cyan-1: hsl(179, 43%, 75%);
+$Cyan-2: hsl(179, 47%, 52%);
+
 $Bright-Yellow: hsl(71, 73%, 54%);
+$Bright-Yellow-1: hsl(71, 59%, 41%);
 
 // Neutral
 $Light-Gray: hsl(204, 43%, 93%);
 $Grayish-Blue: hsl(218, 22%, 67%);
+$White: #fff;
 
 * {
   box-sizing: border-box;
-  margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: hsl(204, 43%, 93%);
+  background-color: $Light-Gray;
   font-size: 16px;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
+  min-height: 100vh;
+  overflow-x: hidden;
   font-family: "Karla", sans-serif;
 }
 
@@ -34,11 +40,28 @@ section {
 }
 
 .card {
-  background-color: $Light-Gray;
+  background-color: $White;
   width: 800px;
+  max-width: 800px;
+  margin: auto;
   border-radius: 10px;
   box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
   &__section-1 {
+    h1 {
+      font-size: 2.2rem;
+      color: hsl(179, 62%, 43%);
+    }
+
+    h2 {
+      color: hsl(71, 73%, 54%);
+      font-weight: bold;
+    }
+
+    p {
+      color: #999;
+      line-height: 1.6;
+      width: 550px;
+    }
   }
 
   .card-bottom {
@@ -47,20 +70,104 @@ section {
 
     &__section-2 {
       color: $Light-Gray;
-      background-color: hsl(179, 62%, 43%);
+      background-color: $Cyan;
       border-bottom-left-radius: 10px;
+
+      h2 {
+        margin: 0;
+        margin-bottom: 2rem;
+        color: $White;
+      }
+
+      .spanny {
+        color: $Cyan-1;
+        display: flex;
+        align-items: center;
+        margin: 0;
+        margin-bottom: 2rem;
+
+        span {
+          color: $White;
+          font-size: 50px;
+          margin-right: 10px;
+          margin-top: 0;
+          display: inline-block;
+        }
+      }
+
+      p {
+        color: $White;
+        margin: 0;
+        margin-bottom: 2rem;
+        font-size: 18px;
+      }
+
+      button {
+        background-color: $Bright-Yellow;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 5px 10px 10px rgba(0, 0, 0, 0.05);
+        color: #fff;
+        font-size: 18px;
+        font-weight: 700;
+        padding: 20px 0;
+        margin-top: 15px;
+        width: 100%;
+        cursor: pointer;
+        transition: transform 300ms ease-in-out,
+          background-color 500ms ease-in-out;
+
+        &:active {
+          transform: scale(1.1);
+        }
+
+        &:hover {
+          background-color: $Bright-Yellow-1;
+        }
+      }
     }
 
     &__section-3 {
       color: $Light-Gray;
-      background-color: hsl(179, 47%, 52%);
+      background-color: $Cyan-2;
       border-bottom-right-radius: 10px;
+
+      h2 {
+        margin: 0;
+        margin-bottom: 1.8rem;
+      }
+
+      p {
+        width: 210px;
+        line-height: 2;
+      }
     }
   }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
+  body {
+    height: initial;
+  }
+
   .container {
     max-width: 375px;
+  }
+
+  .card {
+    width: initial;
+  }
+
+  .card__section-1 p {
+    width: initial;
+  }
+
+  .card .card-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .card .card-bottom__section-2 {
+    border-radius: initial;
   }
 }
