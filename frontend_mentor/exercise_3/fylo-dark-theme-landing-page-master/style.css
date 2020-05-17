@@ -12,6 +12,7 @@ body {
   color: #fff;
   font-size: 14px;
   font-family: "Raleway", sans-serif;
+  overflow-x: hidden;
 }
 
 :root {
@@ -53,6 +54,7 @@ header {
 
 .links li {
   margin: 1rem;
+  font-size: 1.1rem;
   list-style-type: none;
   cursor: pointer;
 }
@@ -89,7 +91,7 @@ header {
   border: none;
   background-color: hsl(198, 60%, 50%);
   padding: 0.8rem 4.4rem;
-  border-radius: 1rem;
+  border-radius: 2rem;
   font-weight: bold;
   color: #fff;
 }
@@ -217,6 +219,10 @@ header {
 
 /* Early access */
 .early-access {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 235%;
 }
 
 .early-access .card {
@@ -261,14 +267,77 @@ header {
   border: none;
 }
 
-.background-color {
-  position: fixed;
-  top: 521px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  background-color: pink;
-  z-index: 1;
+/* footer */
+.footer {
+  background-color: var(--Dark-Blue-Bg-Footer);
+  padding: 0 10%;
+  padding-top: 23%;
+  padding-bottom: 8%;
+}
+
+.footer .footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.footer .footer-container .container-1 {
+  width: 288px;
+}
+
+.footer .footer-container .container-1 i {
+  margin-right: 1rem;
+}
+
+.footer .footer-container .container-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer .footer-container .container-2 div {
+  margin-bottom: 1rem;
+}
+
+.footer .footer-container .container-2 div i {
+  margin-right: 1rem;
+}
+
+.footer .footer-container .container-3 {
+}
+
+.footer .footer-container .container-3 ul li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.footer .footer-container .container-4 {
+}
+
+.footer .footer-container .container-4 ul li {
+  list-style-type: none;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.footer .footer-container .container-5 {
+}
+
+.footer .footer-container .container-5 a {
+  text-decoration: none;
+  padding: 1rem;
+  margin: 0.5rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .footer-container .container-5 a i {
+  font-size: 1rem;
 }
 
 /* footer */
@@ -281,11 +350,76 @@ header {
 }
 
 @media screen and (max-width: 768px) {
+  .intro img {
+    width: 100%;
+    height: 100%;
+  }
+
+  header {
+    justify-content: center;
+  }
+
+  .company-logo {
+    display: none;
+  }
+
   .container {
     max-width: 375px;
   }
 
   .features {
     flex-wrap: wrap;
+  }
+
+  .early-access {
+    position: initial;
+  }
+
+  .early-access .card {
+    width: initial;
+  }
+
+  .early-access .card p {
+    width: initial;
+  }
+
+  .early-access .card h1 {
+    text-align: center;
+  }
+
+  .early-access .card form input[type="submit"] {
+    display: none;
+  }
+
+  .row {
+    display: initial;
+  }
+
+  .col-6 {
+    flex: initial;
+    max-width: initial;
+  }
+
+  .col-4 {
+    flex: initial;
+    max-width: initial;
+  }
+
+  .how-it-works img {
+    height: 100%;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  .testimonials .card {
+    width: initial;
+  }
+
+  .testimonials .card .author-container {
+    padding-bottom: 1rem;
+  }
+
+  .how-it-works p {
+    width: initial;
   }
 }
