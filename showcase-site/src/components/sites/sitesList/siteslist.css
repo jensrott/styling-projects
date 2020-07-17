@@ -2,7 +2,7 @@
 }
 
 .sites .sites__title {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .sites .sites__container {
@@ -17,5 +17,7 @@
   }
   .sites .sites__container {
     grid-template-columns: 1fr;
+    max-width: 270px;
+    margin: 0 auto;
   }
 }

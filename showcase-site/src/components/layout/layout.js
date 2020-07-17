@@ -10,9 +10,7 @@ import "./main.css"
 const Layout = ({ children }) => {
   return (
     <React.Fragment>
-      <Header />
       <div className="container">{children}</div>
-      <Footer />
     </React.Fragment>
   )
 }

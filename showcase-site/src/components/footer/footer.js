@@ -6,7 +6,7 @@ const Footer = () => (
   <footer>
     <p>
       Copyright © {new Date().getFullYear()}
-      <a href="https://github.com/jensrott"> Jens Rottiers</a> All Rights
+      <a target="_blank" href="https://github.com/jensrott"> Jens Rottiers</a> All Rights
       Reserved.
     </p>
   </footer>

@@ -4,13 +4,15 @@
   justify-content: center;
   align-items: center;
   background-color: #fff;
+  text-decoration: none;
   padding: 1rem 0;
   border-radius: 1rem;
-  transition: all 500ms ease-in-out;
+  transition: all 250ms ease-in-out;
 }
 
 .site:hover {
   transform: scale(1.05);
+  /* transform: rotate(5deg); */
 }
 
 .site:active {
