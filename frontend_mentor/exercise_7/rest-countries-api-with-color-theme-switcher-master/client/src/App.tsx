@@ -1,11 +1,15 @@
-import React from 'react';
-import Header from './components/Header';
+import React, { Fragment } from 'react';
+
+import { BrowserRouter as Router } from "react-router-dom";
+import AppRouter from './Router';
 
 const App = () => {
   return (
-    <div className="container mx-auto">
-      <Header />
-    </div>
+    <Fragment>
+      <Router>
+        <AppRouter />
+      </Router>
+    </Fragment>
   );
 }
 

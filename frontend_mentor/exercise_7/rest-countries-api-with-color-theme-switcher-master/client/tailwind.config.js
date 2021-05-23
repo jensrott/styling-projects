@@ -1,8 +1,15 @@
 module.exports = {
   purge: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      width: {
+        'search-bar-w': '30vw'
+      },
+    },
+    fontFamily: {
+      body: ['Nunito Sans']
+    }
   },
   variants: {
     extend: {},

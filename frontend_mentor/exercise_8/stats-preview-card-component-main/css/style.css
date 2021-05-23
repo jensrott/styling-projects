@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: #090b1a;
+  font-size: 15px; }
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 10%; }
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #1b1938;
+  color: #fff;
+  border-radius: 1rem; }
+  .card__text {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    flex: 50%;
+    padding: 5%; }
+    .card__text h1 span {
+      color: #aa5cdb; }
+  .card__image {
+    flex: 50%;
+    padding: 0; }
+    .card__image img {
+      width: 100%;
+      height: 100%;
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      filter: opacity(0.5) drop-shadow(0 0 0 #aa5cdb); }
+      @media only screen and (max-width: 768px) {
+        .card__image img {
+          border-top-right-radius: initial;
+          border-bottom-right-radius: initial; } }
