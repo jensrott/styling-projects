@@ -13,7 +13,7 @@
   "dependencies": {
     "concurrently": "^5.2.0",
     "live-server": "^1.2.1",
-    "node-sass": "^4.14.0",
+    "node-sass": "^7.0.0",
     "stylus": "^0.54.7"
   }
 }
