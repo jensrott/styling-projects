@@ -9,6 +9,6 @@
   "author": "Jens Rottiers <jens.rottiers@scarlet.be>",
   "license": "ISC",
   "dependencies": {
-    "node-sass": "^4.14.0"
+    "node-sass": "^7.0.0"
   }
 }
